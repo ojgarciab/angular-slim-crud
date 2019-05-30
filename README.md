@@ -1,5 +1,7 @@
 # AngularSlimCrud
 
+[![Build Status](https://travis-ci.org/ojgarciab/angular-slim-crud.svg?branch=master)](https://travis-ci.org/ojgarciab/angular-slim-crud)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
 ## Development server
