@@ -21,7 +21,7 @@ class Conexion
                 file_get_contents(__DIR__.'/configuracion.json'),
                 true
             );
-	        if ($configuracion !== null) {
+            if ($configuracion !== null) {
                 self::$configuracion = array_merge(
                     self::$configuracion,
                     $configuracion
