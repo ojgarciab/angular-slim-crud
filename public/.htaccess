@@ -3,9 +3,9 @@ RewriteEngine On
 # Descartamos archivos existentes del resto de reglas
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^ - [L]
-# Si es una URL de angular o una ruta perdida redirigimos al archivo index.html
+# Si es una URL de angular o la ruta raíz redirigimos al archivo index.html
 RewriteCond %{REQUEST_URI} ^/web/.* [OR]
-RewriteCond %{REQUEST_URI} ^/[^/]*$
+RewriteCond %{REQUEST_URI} ^/$
 RewriteRule ^ /web/index.html [QSA,L]
 # Si es una URL de PHP redirigimos al archivo app.php
 RewriteCond %{REQUEST_URI} ^/api/.*
