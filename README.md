@@ -1,7 +1,7 @@
 # AngularSlimCrud
 
 [![Build Status](https://travis-ci.org/ojgarciab/angular-slim-crud.svg?branch=master)](https://travis-ci.org/ojgarciab/angular-slim-crud)
-[![StyleCI](https://github.styleci.io/repos/189402927/shield?branch=master)]
+[![StyleCI](https://github.styleci.io/repos/189402927/shield?branch=master)](https://github.styleci.io/repos/189402927)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
