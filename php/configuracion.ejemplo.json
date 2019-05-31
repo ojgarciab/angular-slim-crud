@@ -1,0 +1,6 @@
+{
+    "dsn": "mysql:host=localhost;dbname=asc;charset=utf8",
+    "usuario": "root",
+    "clave": "",
+    "opciones": [ ]
+}

@@ -5,6 +5,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
+## Preparing the development environment
+
+We assume that working directory is under /var/www/html/&lt;cloned project&gt;/ so we can execute these instructions to allow Apache serve our project under http://&lt;cloned project&gt;.localhost/
+
+    sudo cp apache2/vlocalhost.conf /etc/apache2/sites-available/
+    sudo a2enmod vhost_alias
+    sudo a2enmod rewrite
+    sudo a2ensite vlocalhost
+    sudo systemctl restart apache2
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
