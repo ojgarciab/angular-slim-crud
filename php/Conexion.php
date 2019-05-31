@@ -17,8 +17,11 @@ class Conexion
     public static function obtenerPDO()
     {
         if (is_readable(__DIR__.'/configuracion.json')) {
-            $configuracion = json_decode(__DIR__.'/configuracion.json', true);
-            if ($configuracion !== false) {
+            $configuracion = json_decode(
+                file_get_contents(__DIR__.'/configuracion.json'),
+                true
+            );
+            if ($configuracion !== null) {
                 self::$configuracion = array_merge(
                     self::$configuracion,
                     $configuracion
