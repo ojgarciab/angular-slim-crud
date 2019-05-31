@@ -22,7 +22,7 @@ class Conexion
                 self::$configuracion = array_merge(
                     self::$configuracion,
                     $configuracion
-                );    
+                );
             }
         }
         if (self::$conexion === false) {
