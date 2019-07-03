@@ -17,15 +17,19 @@ We assume that working directory is under /var/www/html/&lt;cloned project&gt;/ 
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run the following command for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+ng build --watch --outputHashing=all --baseHref=/web/ --outputPath=public/web
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run the following command to build the project. The build artifacts will be stored in the `public/web` directory. Use the `--prod` flag for a production build.
+
+```
+ng build --baseHref=/web/ --outputPath=public/web
+```
 
 ## Running unit tests
 

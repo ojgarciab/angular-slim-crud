@@ -1,7 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Evitamos la publicación del index.html generado por "ng build"
-public/web/index.html
+# Evitamos la publicación de archivos generados por "ng build"
+/public/web/
 
 # compiled output
 /dist
