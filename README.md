@@ -23,6 +23,12 @@ Ejecute la siguiente instrucción para construir el proyecto cada vez que se mod
 ng build --watch --outputHashing=all --baseHref=/web/ --outputPath=public/web
 ```
 
+Tras la generación de archivos puede ignorar en GIT los cambios realizados en `public/web` usando la siguiente instrucción:
+
+```
+git update-index --assume-unchanged public/web/.gitkeep public/web/index.html
+```
+
 ## Build
 
 Ejecute la siguiente instrucción para construir el proyecto en el directorio `public/web`. Use el parámetro `--prod` para la construcción del entorno de producción.
