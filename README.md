@@ -3,11 +3,11 @@
 [![Build Status](https://travis-ci.org/ojgarciab/angular-slim-crud.svg?branch=master)](https://travis-ci.org/ojgarciab/angular-slim-crud)
 [![StyleCI](https://github.styleci.io/repos/189402927/shield?branch=master)](https://github.styleci.io/repos/189402927)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+Este proyecto ha sido generado inicialmente con la versión 7.3.9 de [Angular CLI](https://github.com/angular/angular-cli).
 
-## Preparing the development environment
+## PReparando el entorno de desarrollo
 
-We assume that working directory is under /var/www/html/&lt;cloned project&gt;/ so we can execute these instructions to allow Apache serve our project under http://&lt;cloned project&gt;.localhost/
+Asumimos que el directorio de trabajo estará bajo /var/www/html/&lt;cloned project&gt;/ para que las siguientes instrucciones permitan al servidor web Apache servidor nuestro proyecto bajo la URL http://&lt;cloned project&gt;.localhost/
 
     sudo cp apache2/vlocalhost.conf /etc/apache2/sites-available/
     sudo a2enmod vhost_alias
@@ -15,9 +15,9 @@ We assume that working directory is under /var/www/html/&lt;cloned project&gt;/ 
     sudo a2ensite vlocalhost
     sudo systemctl restart apache2
 
-## Development server
+## Servidor de desarrollo
 
-Run the following command for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Ejecute la siguiente instrucción para construir el proyecto cada vez que se modifique un archivo en `public/web`. Navegue a `http://&lt;cloned project&gt;.localhost/`, será redirigido a `http://&lt;cloned project&gt;.localhost/web/`. La aplicación no se recargará automáticamente tras cada cambio como suele ocurrir con `ng serve`, si no que necesitará refrescar manualmente la página.
 
 ```
 ng build --watch --outputHashing=all --baseHref=/web/ --outputPath=public/web
@@ -25,20 +25,17 @@ ng build --watch --outputHashing=all --baseHref=/web/ --outputPath=public/web
 
 ## Build
 
-Run the following command to build the project. The build artifacts will be stored in the `public/web` directory. Use the `--prod` flag for a production build.
+Ejecute la siguiente instrucción para construir el proyecto en el directorio `public/web`. Use el parámetro `--prod` para la construcción del entorno de producción.
 
 ```
 ng build --baseHref=/web/ --outputPath=public/web
 ```
 
-## Running unit tests
+## Ejecutando las pruebas unitarias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ejecute `ng test` para ejecutar las pruebas unitarias usando [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Ejecutando las pruebas extremo-a-extremo
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Ejecute `ng e2e` para ejecutar las pruebas extremo-a-extremo usando [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
