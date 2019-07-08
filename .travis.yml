@@ -22,5 +22,6 @@ install:
   - npm install
 
 script:
+  - "sed -ri \"s/clientId:[^,]*/clientId: '$clientId'/\" src/environments/environment*.ts"
   - npm run test -- --no-watch --no-progress --code-coverage --browsers=ChromeHeadlessCI
   - npm run e2e -- --protractor-config=e2e/protractor-ci.conf.js

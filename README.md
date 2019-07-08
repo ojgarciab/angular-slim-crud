@@ -5,7 +5,7 @@
 
 Este proyecto ha sido generado inicialmente con la versión 7.3.9 de [Angular CLI](https://github.com/angular/angular-cli).
 
-## PReparando el entorno de desarrollo
+## Preparando el entorno de desarrollo
 
 Asumimos que el directorio de trabajo estará bajo /var/www/html/&lt;cloned project&gt;/ para que las siguientes instrucciones permitan al servidor web Apache servidor nuestro proyecto bajo la URL http://&lt;cloned project&gt;.localhost/
 
@@ -14,6 +14,10 @@ Asumimos que el directorio de trabajo estará bajo /var/www/html/&lt;cloned proj
     sudo a2enmod rewrite
     sudo a2ensite vlocalhost
     sudo systemctl restart apache2
+
+Ahora debemos descargarnos los archivos de OpenID que no podemos descargarnos de Google por problemas de CORS:
+
+    curl "https://accounts.google.com/.well-known/openid-configuration" > src/openid-configuration.json
 
 ## Servidor de desarrollo
 
