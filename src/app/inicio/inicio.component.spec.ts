@@ -1,4 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { OAuthModule } from 'angular-oauth2-oidc';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { InicioComponent } from './inicio.component';
 
@@ -8,6 +11,12 @@ describe('InicioComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        OAuthModule.forRoot(),
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule
+      ],
       declarations: [ InicioComponent ]
     })
     .compileComponents();
