@@ -1,9 +1,11 @@
-# AngularSlimCrud
-
+# Angular Slim Crud
 [![Build Status](https://travis-ci.org/ojgarciab/angular-slim-crud.svg?branch=master)](https://travis-ci.org/ojgarciab/angular-slim-crud)
 [![StyleCI](https://github.styleci.io/repos/189402927/shield?branch=master)](https://github.styleci.io/repos/189402927)
 
-Este proyecto ha sido generado inicialmente con la versión 7.3.9 de [Angular CLI](https://github.com/angular/angular-cli).
+Proyecto generado inicialmente con la versión 7.3.9 de [Angular CLI](https://github.com/angular/angular-cli).
+
+# ⚠ IMPORTANTE ⚠
+Este repositorio ha sido archivado. Existen dependencias inseguras y no se debe usar si no se sabe lo que se está haciendo. **No es apto para poner en producción**.
 
 ## Preparando el entorno de desarrollo
 
@@ -21,7 +23,7 @@ Ahora debemos descargarnos los archivos de OpenID que no podemos descargarnos de
 
 ## Servidor de desarrollo
 
-Ejecute la siguiente instrucción para construir el proyecto cada vez que se modifique un archivo en `public/web`. Navegue a `http://&lt;cloned project&gt;.localhost/`, será redirigido a `http://&lt;cloned project&gt;.localhost/web/`. La aplicación no se recargará automáticamente tras cada cambio como suele ocurrir con `ng serve`, si no que necesitará refrescar manualmente la página.
+Ejecute la siguiente instrucción para construir el proyecto cada vez que se modifique un archivo en `public/web`. Navegue a `http:/<cloned project>.localhost/`, será redirigido a `http://<cloned project>.localhost/web/`. La aplicación no se recargará automáticamente tras cada cambio como suele ocurrir con `ng serve`, si no que necesitará refrescar manualmente la página.
 
 ```
 ng build --watch --outputHashing=all --baseHref=/web/ --outputPath=public/web
